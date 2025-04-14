@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta un Tomate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1594057687713-5fd14eed1a8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .tomato-card {
+            transition: transform 0.3s;
+        }
+        
+        .tomato-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-flower1 text-danger"></i> Adopta un Tomate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tomates">Nuestras verduras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proceso">Proceso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center" id="inicio">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Adopta un Tomate</h1>
+            <p class="lead mb-5">Conviértete en padrino o madrina de un tomate orgánico criado por <strong>Gustavo</strong> y recibe sus frutos directamente en tu hogar.</p>
+            <a href="#tomates" class="btn btn-danger btn-lg px-4">¡Quiero adoptar!</a>
+        </div>
+    </section>
+
+    <!-- verduras Section -->
+    <section class="py-5" id="tomates">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros frutas y verduras</h2>
+            <div class="row g-4">
+                <!-- Tomate 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 tomato-card">
+                        <img src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Tomate Cherry">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomate Cherry</h5>
+                            <p class="card-text">Pequeños, dulces y perfectos para ensaladas. Adopta una planta de tomate cherry y recibe cosechas semanales.</p>
+                            <p class="text-danger fw-bold">Cosecha estimada: 500g/semana</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#contacto" class="btn btn-outline-danger w-100">Adoptar por $25/mes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tomate 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 tomato-card">
+                        <img src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Tomate Cherry">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomate Cherry</h5>
+                            <p class="card-text">Pequeños, dulces y perfectos para ensaladas. Adopta una planta de tomate cherry y recibe cosechas semanales.</p>
+                            <p class="text-danger fw-bold">Cosecha estimada: 500g/semana</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#contacto" class="btn btn-outline-danger w-100">Adoptar por $25/mes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tomate 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 tomato-card">
+                        <img src="https://images.unsplash.com/photo-1582284540020-8acbe03f4924?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Tomate Cherry">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomate Cherry</h5>
+                            <p class="card-text">Pequeños, dulces y perfectos para ensaladas. Adopta una planta de tomate cherry y recibe cosechas semanales.</p>
+                            <p class="text-danger fw-bold">Cosecha estimada: 500g/semana</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#contacto" class="btn btn-outline-danger w-100">Adoptar por $25/mes</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Proceso Section -->
+    <section class="py-5 bg-light" id="proceso">
+        <div class="container">
+            <h2 class="text-center mb-5">Cómo Funciona</h2>
+            <div class="row g-4">
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <i class="bi bi-1-circle-fill text-danger fs-1 mb-3"></i>
+                        <h4>Elige tu verdura</h4>
+                        <p>Selecciona la variedad que más te guste de nuestro catálogo de verduras orgánicas</p>
+                    </div>
+                
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <i class="bi bi-2-circle-fill text-danger fs-1 mb-3"></i>
+                        <h4>Nosotros las cuidamos</h4>
+                        <p>Nuestros agricultores expertos, Gustavo, Silvia i Mireia cuidan de tu planta con métodos orgánicos y sostenibles.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <i class="bi bi-3-circle-fill text-danger fs-1 mb-3"></i>
+                        <h4>Recibe tus verduras</h4>
+                        <p>Te enviamos los frutos de tu planta directamente a tu hogar cada semana durante toda la temporada.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#tomates" class="btn btn-danger btn-lg">Adopta ahora</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonios Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Lo que dicen nuestros adoptantes</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Nunca había probado tomates con tanto sabor. Mi familia espera con ansias la entrega semanal de nuestro tomate adoptado."</p>
+                            <p class="fw-bold mb-0">- Pili</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Una experiencia increíble. Mis hijos están aprendiendo sobre agricultura sostenible y además disfrutamos de tomates deliciosos."</p>
+                            <p class="fw-bold mb-0">- Amparo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                            </div>
+                            <p class="card-text">"Como chef, valoro enormemente la calidad de estas verduras. A parte, Silvia y Thor me trataron super bien."</p>
+                            <p class="fw-bold mb-0">- Antonio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contacto Section -->
+    <section class="py-5 bg-light" id="contacto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">¿Listo para adoptar?</h2>
+                    <p class="mb-4">Completa este formulario y nos pondremos en contacto contigo para finalizar la adopción de tu verdura/tomate.</p>
+                    
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="tomate" class="form-label">Verdura que deseas adoptar</label>
+                            <select class="form-select" id="tomate" required>
+                                <option value="" selected disabled>Selecciona una opción</option>
+                                <option value="cherry">Tomate Cherry</option>
+                                <option value="roma">Tomate Roma</option>
+                                <option value="beefsteak">Tomate Beefsteak</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje (opcional)</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Enviar solicitud</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742.675964901235!2d2.153059132397156!3d41.37201571279876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a27abe5f38d3%3A0xcb9c378b743b5823!2sComissaria%20de%20la%20Gu%C3%A0rdia%20Urbana!5e1!3m2!1sca!2ses!4v1744660308804!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <div class="mt-4">
+                        <h4>Visítanos</h4>
+                        <p><i class="bi bi-geo-alt-fill text-danger me-2"></i> Carrer de la Mireia guapíssima, 2003</p>
+                        <p><i class="bi bi-telephone-fill text-danger me-2"></i> +34 123 456 7890</p>
+                        <p><i class="bi bi-envelope-fill text-danger me-2"></i> info@adoptauntomate.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Preguntas Frecuentes</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="accordionFAQ">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        ¿Puedo visitar mi tomate adoptado?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        ¡Claro que sí! Organizamos visitas mensuales a nuestros huertos para que puedas ver cómo crece tu planta. También recibirás actualizaciones fotográficas semanales de tu tomate.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Cuánto tiempo dura la adopción?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        Las adopciones tienen una duración mínima de 3 meses, que corresponde a un ciclo de producción. Puedes renovar tu adopción al finalizar este periodo o probar con otra variedad.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Cómo se realizan los envíos?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        Realizamos entregas semanales en un radio de 50 km de nuestra granja. Los tomates se cosechan el mismo día de la entrega para garantizar su frescura. También puedes recogerlos personalmente si lo prefieres.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        ¿Los tomates son orgánicos?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body">
+                                        Absolutamente. Todos nuestros tomates se cultivan siguiendo prácticas orgánicas certificadas. No utilizamos pesticidas químicos ni fertilizantes artificiales, solo métodos naturales y sostenibles.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Newsletter Section -->
+        <section class="py-5 bg-danger text-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h3 class="mb-4">Suscríbete a nuestro boletín</h3>
+                        <p class="mb-4">Recibe consejos de cultivo, recetas con tomates y noticias sobre nuestro proyecto.</p>
+                        <form class="row g-2 justify-content-center">
+                            <div class="col-md-8">
+                                <input type="email" class="form-control form-control-lg" placeholder="Tu correo electrónico">
+                            </div>
+                            <div class="col-md-auto">
+                                <form onsubmit="mostrarAlerta(event)">
+                                    <button type="submit" class="btn btn-light btn-lg">Suscribirme</button>
+                                  </form>
+                                  
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Adopta un Tomate</h5>
+                        <p>Conectamos amantes de los tomates con plantas orgánicas para que disfrutes de los mejores sabores directamente del huerto a tu mesa.</p>
+                        <div class="social-icons">
+                            <a href="#" class="text-dark me-2"><i class="bi bi-facebook fs-5"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="bi bi-instagram fs-5"></i></a>
+                            <a href="#" class="text-dark me-2"><i class="bi bi-twitter fs-5"></i></a>
+                            <a href="#" class="text-dark"><i class="bi bi-youtube fs-5"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Enlaces rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#inicio" class="text-decoration-none text-dark">Inicio</a></li>
+                            <li><a href="#tomates" class="text-decoration-none text-dark">Nuestros Tomates</a></li>
+                            <li><a href="#proceso" class="text-decoration-none text-dark">Cómo Funciona</a></li>
+                            <li><a href="#contacto" class="text-decoration-none text-dark">Contacto</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Política de Privacidad</a></li>
+                            <li><a href="#" class="text-decoration-none text-dark">Términos y Condiciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-3">Horario de atención</h5>
+                        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                        <p>Sábados: 9:00 AM - 2:00 PM</p>
+                        <p>Domingos: Cerrado que estamos de chill en la piscina</p>
+                        <p><strong>Teléfono:</strong> +34 123 456 7890</p>
+                        <p><strong>Email:</strong> info@adoptauntomate.com</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="text-center">
+                    <p class="mb-0">&copy; 2025 Adopta un Tomate. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        ```html
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+
+
+        
+function mostrarAlerta(event) {
+      event.preventDefault(); // Evita que se envíe el formulario
+      alert("Enviado!");
+    }
+    
+    // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form validation
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simple validation check
+                const inputs = this.querySelectorAll('input[required], select[required]');
+                let isValid = true;
+                
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        isValid = false;
+                        input.classList.add('is-invalid');
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                });
+                
+                if (isValid) {
+                    // Show success message
+                    const formContainer = this.parentElement;
+                    this.style.display = 'none';
+                    
+                    const successMsg = document.createElement('div');
+                    successMsg.className = 'alert alert-success mt-3';
+                    successMsg.innerHTML = '<h4>¡Gracias por tu interés!</h4><p>Hemos recibido tu solicitud de adopción. Nos pondremos en contacto contigo en las próximas 24 horas para completar el proceso.</p>';
+                    
+                    formContainer.appendChild(successMsg);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
