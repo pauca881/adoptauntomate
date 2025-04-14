@@ -139,7 +139,7 @@
                     <div class="p-3">
                         <i class="bi bi-2-circle-fill text-danger fs-1 mb-3"></i>
                         <h4>Nosotros las cuidamos</h4>
-                        <p>Nuestros agricultores expertos, Gustavo, Silvia i Mireia cuidan de tu planta con métodos orgánicos y sostenibles.</p>
+                        <p>Nuestros agricultores expertos, Gustavo, Silvia i Mireia cuidan de tu planta con métodos orgánicos y sostenibles. Thor se encargará de la vigilancia</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
@@ -335,10 +335,10 @@
                                 <input type="email" class="form-control form-control-lg" placeholder="Tu correo electrónico">
                             </div>
                             <div class="col-md-auto">
-                                <form onsubmit="mostrarAlerta(event)">
+                                <form id="myform">
                                     <button type="submit" class="btn btn-light btn-lg">Suscribirme</button>
                                   </form>
-                                  
+
                             </div>
                         </form>
                     </div>
@@ -394,13 +394,6 @@
     <!-- Custom JS -->
     <script>
 
-
-        
-function mostrarAlerta(event) {
-      event.preventDefault(); // Evita que se envíe el formulario
-      alert("Enviado!");
-    }
-    
     // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
