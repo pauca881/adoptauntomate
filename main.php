@@ -9,3 +9,7 @@ if (!isset($_SESSION['user'])) {
 
 
 ?>
+
+<form action="crear_post.php" method="get">
+    <input type="submit" value="Crear nuevo post">
+</form>
