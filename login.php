@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
 
-    if ($usuario === 'admin' && $contrasena === '1234') {
+    if ($usuario === 'Gustavo' && $contrasena === '1234') {
         $_SESSION['user'] = $usuario;
         header("Location: main.php");
         exit();
