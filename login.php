@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header("Location: main.php");
         exit();
     } else {
-        $error = "Usuario o contraseña incorrectos.";
+        $error = "Usuari o contrasenya incorrectes.";
     }
 }
 ?>
