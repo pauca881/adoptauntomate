@@ -11,9 +11,15 @@ for archivo in os.listdir(origen):
     ruta_origen = os.path.join(origen, archivo)
     ruta_destino = os.path.join(destino, archivo)
 
-    # Verificar si es un archivo
     if os.path.isfile(ruta_origen):
-        shutil.move(ruta_origen, ruta_destino)
-        print(f'Movido: {archivo}')
+        try:
+            # Si ya existe, lo elimina antes de mover
+            if os.path.exists(ruta_destino):
+                os.remove(ruta_destino)
 
-print('Todos los archivos han sido movidos.')
+            shutil.move(ruta_origen, ruta_destino)
+            print(f'Movido: {archivo}')
+        except Exception as e:
+            print(f'Error al mover {archivo}: {e}')
+
+print('Proceso completado.')
